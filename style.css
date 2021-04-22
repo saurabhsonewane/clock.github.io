@@ -1,0 +1,57 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+}
+
+#clock {
+  height: 50vw;
+  width: 50vw;
+  background: url("Images/38636868-black-office-clock-face-with-no-hands-isolated-on-white-background-removebg-preview.png") no-repeat;
+  background-size: 100%;
+  margin: auto;
+  position: relative;
+}
+
+#hour, #min, #sec{
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour{
+    height: 25%;
+    width: 0.5%;
+    background-color: white;
+    top: 26.9%;
+    left: 49.6%;
+   
+}
+
+#min{
+    height: 25%;
+    width: 0.3%;
+    background-color: white;
+    top: 26.9%;
+    left: 49.8%;
+    
+}
+
+#sec{
+    height: 26%;
+    width: 0.1%;
+    background-color: white;
+    top: 26%;
+    left: 49.8%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #clock {
+        height: 100vw;
+  width: 100vw;
+    }
+  }
